@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flames Result</title>
+    {% load static %}
+    <link rel = "stylesheet" href = "{% static 'styles.css' %}" href="https://fonts.googleapis.com/css?family=Pacifico">    
+<!-- <link rel = "stylesheet" href = 'style.css' href="https://fonts.googleapis.com/css?family=Pacifico"> -->
+<link href="https://www.dafontfree.net/embed/YmFza2VydmlsbGUtb2xkLWZhY2UtcmVndWxhciZkYXRhLzEzL2IvNjQ0NjkvQkFTS1ZJTEwuVFRG" rel="stylesheet" type="text/css"/> 
+</head>
+  <body>
+   <div id="container">
+        <div class="left">
+            <div class="left-up">                
+                <img src="{% static 'angel.svg' %}" class="angel">
+            </div>
+            <div class="left-down">
+              <button onclick="history.back()" class="back" type="submit">Back</button> 
+
+          </div>
+        </div>
+        <div class="middle">
+            <div class="middle-top">
+                <h1> Flames Calculator Result!</h1>
+            </div>
+            <div class="line">
+            </div>
+            <div class="result-bottom">
+                <div class="result">
+                    <h1>{{ result }}</h1>
+                </div>
+                <div class="writeup">
+                    <p>{{narration}}
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-down">
+                <img src="{% static 'hearts.svg' %}" class="hearts">
+                </div>
+            </div>
+    </div>
+
+  </body>
+</html>
+
+
+
+<!-- 
+    
+</head>
+<body>
+  <div class="main-block">
+      <div class="texts">    
+          <h1>FLAMES CALCULATION RESULT!</h1>
+          <h4>{{ name1 }} and {{ name2 }} are {{ result }}</h4>
+          <h4>{{narration}}</h4>
+      </div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flames</title> -->

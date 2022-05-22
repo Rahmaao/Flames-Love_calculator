@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flames</title>
+    {% load static %}
+    
+<link rel = "stylesheet" href = "{% static 'styles.css' %}" href="https://fonts.googleapis.com/css?family=Pacifico">
+<link href="https://www.dafontfree.net/embed/YmFza2VydmlsbGUtb2xkLWZhY2UtcmVndWxhciZkYXRhLzEzL2IvNjQ0NjkvQkFTS1ZJTEwuVFRG" rel="stylesheet" type="text/css"/> 
+</head>
+  <body>
+   <div id="container">
+        <div class="left">
+            <div class="left-up">                
+                <img src="{% static 'angel.svg' %}" class="angel">          
+            </div>
+        </div>
+        <div class="middle">            
+            <div class="middle-top">
+                <h1> Flames Love Calculator!</h1>
+            </div>
+            <div class="middle-center">
+                <h1> FIND YOUR TRUE RELATIONSHIP</h1>
+            </div>
+            <div class="middle-bottom">
+                <img src="{% static 'joined.svg' %}" class="joined">
+                <form method = 'POST' class="form" action = "{% url 'index' %}">
+                    {% csrf_token %}
+
+                    <label id="icon" for="name"><class="yname"></label>
+                    <input type="text" name="name1" id="name" placeholder="ENTER YOUR NAME" required/>
+                    <label id="icon" for="name"><class="oname"></label>
+                    <input type="text" name="name2" id="name" placeholder="ENTER YOUR PARTNER'S NAME" required/>
+                    <button class="calculate" type="submit" >Calculate!</button>
+                  </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="right-down">
+                <img src="{% static 'hearts.svg' %}" 
+                class="hearts">
+                </div>
+            </div>
+    </div>
+  </body>
+</html>
+
+<!-- Here. -->
+<!-- They said your teamviewer is from 1990 -->
+
